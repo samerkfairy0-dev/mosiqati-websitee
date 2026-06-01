@@ -7,14 +7,13 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="site-header">
   <span class="store-name">موسيقاتي</span>
   <img src="image/logo.png" alt="موسيقاتي" class="store-logo">
 </div>
 
 <nav>
-  <a href="index.html">الرئيسية</a>
+  <a href="home.html">الرئيسية</a>
   <a href="store.html">المتجر</a>
   <a href="gifts.html" class="active">الهدايا</a>
   <a href="offers.html">العروض</a>
@@ -22,12 +21,7 @@
   <a href="contact.html">تواصل معنا</a>
 </nav>
 
-<div class="tts-bar">
-  <span>🔊 استمع</span>
-  <button class="tts-btn" onclick="speak('gifts-text')">▶ استمع الآن</button>
-</div>
-
-<div class="page-hd" id="gifts-text"><h1>🎁 الهدايا الموسيقية</h1><p>أهدِ من تحب تجربة موسيقية لا تُنسى</p></div>
+<div class="page-hd"><h1>🎁 الهدايا الموسيقية</h1><p>أهدِ من تحب تجربة موسيقية لا تُنسى</p></div>
 
 <div class="wrap">
   <div class="sec-title">🎀 هدايا مميزة</div>
@@ -37,7 +31,7 @@
       <div class="card-body">
         <h3>مكسر صوت</h3>
         <p>هدية مثالية لعشاق التسجيل والموسيقى</p>
-        <div class="row"><span class="price">80 JD</span><button class="btn">اشتري</button></div>
+        <div class="row"><span class="price">80 JD</span><button class="btn" onclick="showSuccess()">اشتري</button></div>
       </div>
     </div>
     <div class="card">
@@ -45,7 +39,7 @@
       <div class="card-body">
         <h3>سماعات استوديو</h3>
         <p>هدية ممتازة لعشاق الصوت الجيد</p>
-        <div class="row"><span class="price">70 JD</span><button class="btn">اشتري</button></div>
+        <div class="row"><span class="price">70 JD</span><button class="btn" onclick="showSuccess()">اشتري</button></div>
       </div>
     </div>
   </div>
@@ -53,13 +47,11 @@
 
 <footer>© 2025 موسيقاتي - جميع الحقوق محفوظة | الأردن - عمّان</footer>
 
-<!-- Zoom Controls -->
 <div class="zoom-controls">
   <button class="zoom-btn" onclick="zoomIn()">+</button>
   <button class="zoom-btn" onclick="zoomOut()">−</button>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>

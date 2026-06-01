@@ -7,25 +7,19 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="site-header">
   <span class="store-name">موسيقاتي</span>
   <img src="image/logo.png" alt="موسيقاتي" class="store-logo">
 </div>
 
 <nav>
-  <a href="index.html">الرئيسية</a>
+  <a href="home.html">الرئيسية</a>
   <a href="store.html">المتجر</a>
   <a href="gifts.html">الهدايا</a>
   <a href="offers.html" class="active">العروض</a>
   <a href="about.html">من نحن</a>
   <a href="contact.html">تواصل معنا</a>
 </nav>
-
-<div class="tts-bar">
-  <span>🔊 استمع</span>
-  <button class="tts-btn" onclick="speak('offers-text')">▶ استمع الآن</button>
-</div>
 
 <div class="countdown">
   <h2>⏰ العرض ينتهي خلال:</h2>
@@ -36,42 +30,33 @@
   </div>
 </div>
 
-<div class="page-hd"><h1 id="offers-text">🏷️ العروض الخاصة</h1><p>أسعار لا تُفوَّت - محدودة الوقت!</p></div>
+<div class="page-hd"><h1>🏷️ العروض الخاصة</h1><p>أسعار لا تُفوَّت - محدودة الوقت!</p></div>
 
 <div class="wrap">
   <div class="sec-title">🔥 عروض اليوم</div>
   <div class="grid3">
     <div class="card">
-      <div style="position:relative;">
-        <img src="image/el.jpg" alt="قيثارة كهربائية">
-        <span style="position:absolute;top:8px;right:8px;background:#e74c3c;color:white;padding:3px 9px;border-radius:20px;font-size:11px;">خصم 20%</span>
-      </div>
+      <div style="position:relative;"><img src="image/el.jpg" alt="قيثارة كهربائية"><span style="position:absolute;top:8px;right:8px;background:#e74c3c;color:white;padding:3px 9px;border-radius:20px;font-size:11px;">خصم 20%</span></div>
       <div class="card-body">
         <h3>قيثارة كهربائية</h3>
         <p>خصم 20%</p>
-        <div class="row"><span class="price">160 JD</span><button class="btn">اشتري</button></div>
+        <div class="row"><span class="price">160 JD</span><button class="btn" onclick="showSuccess()">اشتري</button></div>
       </div>
     </div>
     <div class="card">
-      <div style="position:relative;">
-        <img src="image/k.jpg" alt="كيبورد 61 مفتاح">
-        <span style="position:absolute;top:8px;right:8px;background:#e74c3c;color:white;padding:3px 9px;border-radius:20px;font-size:11px;">خصم 30%</span>
-      </div>
+      <div style="position:relative;"><img src="image/k.jpg" alt="كيبورد 61 مفتاح"><span style="position:absolute;top:8px;right:8px;background:#e74c3c;color:white;padding:3px 9px;border-radius:20px;font-size:11px;">خصم 30%</span></div>
       <div class="card-body">
         <h3>كيبورد 61 مفتاح</h3>
         <p>خصم 30%</p>
-        <div class="row"><span class="price">126 JD</span><button class="btn">اشتري</button></div>
+        <div class="row"><span class="price">126 JD</span><button class="btn" onclick="showSuccess()">اشتري</button></div>
       </div>
     </div>
     <div class="card">
-      <div style="position:relative;">
-        <img src="image/de.jpg" alt="درمز إلكتروني">
-        <span style="position:absolute;top:8px;right:8px;background:#e74c3c;color:white;padding:3px 9px;border-radius:20px;font-size:11px;">خصم 15%</span>
-      </div>
+      <div style="position:relative;"><img src="image/de.jpg" alt="درمز إلكتروني"><span style="position:absolute;top:8px;right:8px;background:#e74c3c;color:white;padding:3px 9px;border-radius:20px;font-size:11px;">خصم 15%</span></div>
       <div class="card-body">
         <h3>درمز إلكتروني</h3>
         <p>خصم 15%</p>
-        <div class="row"><span class="price">357 JD</span><button class="btn">اشتري</button></div>
+        <div class="row"><span class="price">357 JD</span><button class="btn" onclick="showSuccess()">اشتري</button></div>
       </div>
     </div>
   </div>
@@ -90,20 +75,18 @@
     <div style="text-align:center;">
       <span style="font-size:14px;color:#999;text-decoration:line-through;">180 JD</span>
       <div style="font-size:48px;font-weight:bold;color:#f0c040;">125 JD</div>
-      <button class="btn-gold" style="display:inline-block;margin-top:10px;" onclick="showSuccess()">🛒 احصل على الباقة</button>
+      <button class="btn-gold" onclick="showSuccess()" style="display:inline-block;margin-top:10px;">🛒 احصل على الباقة</button>
     </div>
   </div>
 </div>
 
 <footer>© 2025 موسيقاتي - جميع الحقوق محفوظة | الأردن - عمّان</footer>
 
-<!-- Zoom Controls -->
 <div class="zoom-controls">
   <button class="zoom-btn" onclick="zoomIn()">+</button>
   <button class="zoom-btn" onclick="zoomOut()">−</button>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>

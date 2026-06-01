@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>موسيقاتي - الرئيسية</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site-header">
+  <span class="store-name">موسيقاتي</span>
+  <img src="image/logo.png" alt="موسيقاتي" class="store-logo">
+</div>
+
+<nav>
+  <a href="home.html" class="active">الرئيسية</a>
+  <a href="store.html">المتجر</a>
+  <a href="gifts.html">الهدايا</a>
+  <a href="offers.html">العروض</a>
+  <a href="about.html">من نحن</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+<div class="tts-bar">
+  <span>🔊 استمع إلى نص الصفحة</span>
+  <button class="tts-btn" onclick="speak('page-text')">▶ استمع الآن</button>
+</div>
+
+<div class="hero">
+  <div class="hero-text" id="page-text">
+    <h1>مرحباً بك في <span>موسيقاتي</span> 🎵</h1>
+    <p>متجر موسيقاتي (MOSIQATI) هو متجر رائد في بيع الآلات الموسيقية في الأردن. نقدم مجموعة واسعة من العود والقيثارات والبيانو والدرمز ومعدات الاستوديو. نوفر التوصيل لجميع محافظات الأردن مع خدمات الصيانة والاستشارات الفنية.</p>
+    <div class="hero-btns">
+      <a href="store.html" class="btn-gold">تسوق الآن 🛒</a>
+      <a href="about.html" class="btn-outline">تعرف علينا</a>
+    </div>
+  </div>
+  <img src="image/logo.png" alt="موسيقاتي" style="width:140px;height:140px;border-radius:50%;border:3px solid #f0c040;">
+</div>
+
+<div class="wrap">
+  <div class="about-box">
+    <h2>🏪 عن موسيقاتي</h2>
+    <p>متجر <strong>موسيقاتي (MOSIQATI)</strong> هو متجر رائد في بيع الآلات الموسيقية في الأردن. نقدم مجموعة واسعة من العود والقيثارات والبيانو والدرمز ومعدات الاستوديو. نوفر التوصيل لجميع محافظات الأردن مع خدمات الصيانة والاستشارات الفنية.</p>
+  </div>
+  <div class="sec-title">📊 مبيعاتنا في آخر 6 أشهر</div>
+  <img src="image/chart.png" alt="رسم بياني للمبيعات" style="width:100%;max-width:700px;display:block;margin:0 auto 30px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);">
+</div>
+
+<footer>© 2025 موسيقاتي - جميع الحقوق محفوظة | الأردن - عمّان</footer>
+
+<div class="zoom-controls">
+  <button class="zoom-btn" onclick="zoomIn()">+</button>
+  <button class="zoom-btn" onclick="zoomOut()">−</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
