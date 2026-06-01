@@ -4,59 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>موسيقاتي - العروض</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:Arial,sans-serif;background:#f4f4f4;color:#222;direction:rtl;}
-.site-header{background:#111;padding:10px 25px;display:flex;align-items:center;justify-content:space-between;}
-.store-name{color:#f0c040;font-size:26px;font-weight:bold;}
-.store-logo{width:60px;height:60px;border-radius:50%;border:2px solid #f0c040;object-fit:cover;}
-nav{background:#1a1a1a;display:flex;justify-content:center;border-top:2px solid #f0c040;}
-nav a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 20px;color:#ccc;text-decoration:none;font-size:13px;border-left:1px solid #333;transition:background .2s,color .2s;}
-nav a:first-child{border-left:none;}
-nav a:hover,nav a.active{background:#f0c040;color:#111;}
-nav a img{width:20px;height:20px;filter:invert(1);}
-nav a:hover img,nav a.active img{filter:invert(0);}
-.page-hd{background:#111;color:white;padding:28px 30px;}
-.page-hd h1{font-size:24px;color:#f0c040;}
-.page-hd p{color:#aaa;margin-top:5px;font-size:14px;}
-.wrap{max-width:1050px;margin:30px auto;padding:0 25px;}
-.sec-title{font-size:18px;color:#111;border-bottom:3px solid #f0c040;padding-bottom:6px;margin-bottom:18px;}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
-.card{background:white;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);}
-.card img{width:100%;height:170px;object-fit:cover;}
-.card-body{padding:13px;}
-.card-body h3{font-size:14px;margin-bottom:4px;}
-.card-body p{font-size:12px;color:#777;margin-bottom:8px;}
-.price{color:#e74c3c;font-weight:bold;}
-.row{display:flex;justify-content:space-between;align-items:center;}
-.btn{background:#111;color:white;border:none;padding:7px 14px;border-radius:5px;cursor:pointer;font-family:Arial;font-size:13px;}
-.btn:hover{background:#333;}
-footer{background:#111;color:#888;text-align:center;padding:18px;font-size:13px;margin-top:30px;}
-/* text-to-speech */
-.tts-bar{background:#1a1a2e;color:white;padding:10px 20px;display:flex;align-items:center;gap:12px;font-size:13px;}
-.tts-btn{background:#f0c040;color:#111;border:none;padding:7px 16px;border-radius:5px;cursor:pointer;font-weight:bold;font-family:Arial;font-size:13px;}
-</style>
-<style>
-.countdown{background:#c0392b;color:white;text-align:center;padding:18px;}
-.countdown h2{font-size:17px;margin-bottom:10px;}
-.cdrow{display:flex;gap:12px;justify-content:center;}
-.cdbox{background:rgba(255,255,255,.15);padding:10px 18px;border-radius:7px;text-align:center;}
-.cdnum{font-size:28px;font-weight:bold;display:block;}
-.cdlbl{font-size:11px;}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div class="site-header">
   <span class="store-name">موسيقاتي</span>
-  <img src="../logo.png" alt="موسيقاتي" class="store-logo">
+  <img src="image/logo.png" alt="موسيقاتي" class="store-logo">
 </div>
-<nav><a href="home.html"><img src="../image/home.png" alt="">الرئيسية</a><a href="store.html"><img src="../image/store.png" alt="">المتجر</a><a href="gifts.html"><img src="../image/gift-.png" alt="">الهدايا</a><a href="offers.html" class="active"><img src="../image/offer.png" alt="">العروض</a><a href="about.html"><img src="../image/about.png" alt="">من نحن</a><a href="contact.html"><img src="../image/contact.png" alt="">تواصل معنا</a></nav>
+
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="store.html">المتجر</a>
+  <a href="gifts.html">الهدايا</a>
+  <a href="offers.html" class="active">العروض</a>
+  <a href="about.html">من نحن</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
 
 <div class="tts-bar">
   <span>🔊 استمع</span>
   <button class="tts-btn" onclick="speak('offers-text')">▶ استمع الآن</button>
 </div>
+
 <div class="countdown">
   <h2>⏰ العرض ينتهي خلال:</h2>
   <div class="cdrow">
@@ -65,26 +35,47 @@ footer{background:#111;color:#888;text-align:center;padding:18px;font-size:13px;
     <div class="cdbox"><span class="cdnum" id="s">30</span><span class="cdlbl">ثانية</span></div>
   </div>
 </div>
+
 <div class="page-hd"><h1 id="offers-text">🏷️ العروض الخاصة</h1><p>أسعار لا تُفوَّت - محدودة الوقت!</p></div>
+
 <div class="wrap">
   <div class="sec-title">🔥 عروض اليوم</div>
   <div class="grid3">
     <div class="card">
-  <div style="position:relative;"><img src="../image/el.jpg" alt="قيثارة كهربائية"><span style="position:absolute;top:8px;right:8px;background:#e74c3c;color:white;padding:3px 9px;border-radius:20px;font-size:11px;">خصم 20%</span></div>
-  <div class="card-body"><h3>قيثارة كهربائية</h3><p>خصم 20%</p>
-  <div class="row"><span class="price">160 JD</span><button class="btn">اشتري</button></div></div>
-</div>
+      <div style="position:relative;">
+        <img src="image/el.jpg" alt="قيثارة كهربائية">
+        <span style="position:absolute;top:8px;right:8px;background:#e74c3c;color:white;padding:3px 9px;border-radius:20px;font-size:11px;">خصم 20%</span>
+      </div>
+      <div class="card-body">
+        <h3>قيثارة كهربائية</h3>
+        <p>خصم 20%</p>
+        <div class="row"><span class="price">160 JD</span><button class="btn">اشتري</button></div>
+      </div>
+    </div>
     <div class="card">
-  <div style="position:relative;"><img src="../image/k.jpg" alt="كيبورد 61 مفتاح"><span style="position:absolute;top:8px;right:8px;background:#e74c3c;color:white;padding:3px 9px;border-radius:20px;font-size:11px;">خصم 30%</span></div>
-  <div class="card-body"><h3>كيبورد 61 مفتاح</h3><p>خصم 30%</p>
-  <div class="row"><span class="price">126 JD</span><button class="btn">اشتري</button></div></div>
-</div>
+      <div style="position:relative;">
+        <img src="image/k.jpg" alt="كيبورد 61 مفتاح">
+        <span style="position:absolute;top:8px;right:8px;background:#e74c3c;color:white;padding:3px 9px;border-radius:20px;font-size:11px;">خصم 30%</span>
+      </div>
+      <div class="card-body">
+        <h3>كيبورد 61 مفتاح</h3>
+        <p>خصم 30%</p>
+        <div class="row"><span class="price">126 JD</span><button class="btn">اشتري</button></div>
+      </div>
+    </div>
     <div class="card">
-  <div style="position:relative;"><img src="../image/de.jpg" alt="درمز إلكتروني"><span style="position:absolute;top:8px;right:8px;background:#e74c3c;color:white;padding:3px 9px;border-radius:20px;font-size:11px;">خصم 15%</span></div>
-  <div class="card-body"><h3>درمز إلكتروني</h3><p>خصم 15%</p>
-  <div class="row"><span class="price">357 JD</span><button class="btn">اشتري</button></div></div>
-</div>
+      <div style="position:relative;">
+        <img src="image/de.jpg" alt="درمز إلكتروني">
+        <span style="position:absolute;top:8px;right:8px;background:#e74c3c;color:white;padding:3px 9px;border-radius:20px;font-size:11px;">خصم 15%</span>
+      </div>
+      <div class="card-body">
+        <h3>درمز إلكتروني</h3>
+        <p>خصم 15%</p>
+        <div class="row"><span class="price">357 JD</span><button class="btn">اشتري</button></div>
+      </div>
+    </div>
   </div>
+
   <div style="background:linear-gradient(135deg,#111,#1a1a2e);color:white;padding:30px;border-radius:10px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center;">
     <div>
       <h2 style="color:#f0c040;margin-bottom:12px;">🎯 باقة المبتدئ الشاملة</h2>
@@ -99,26 +90,20 @@ footer{background:#111;color:#888;text-align:center;padding:18px;font-size:13px;
     <div style="text-align:center;">
       <span style="font-size:14px;color:#999;text-decoration:line-through;">180 JD</span>
       <div style="font-size:48px;font-weight:bold;color:#f0c040;">125 JD</div>
-      <a href="#" style="display:inline-block;background:#f0c040;color:#111;padding:11px 28px;border-radius:6px;text-decoration:none;font-weight:bold;margin-top:10px;">🛒 احصل على الباقة</a>
+      <button class="btn-gold" style="display:inline-block;margin-top:10px;" onclick="showSuccess()">🛒 احصل على الباقة</button>
     </div>
   </div>
 </div>
+
 <footer>© 2025 موسيقاتي - جميع الحقوق محفوظة | الأردن - عمّان</footer>
-<script>
-function speak(id){
-  var txt = document.getElementById(id).innerText;
-  var u = new SpeechSynthesisUtterance(txt);
-  u.lang='ar-SA'; u.rate=0.9;
-  window.speechSynthesis.cancel();
-  window.speechSynthesis.speak(u);
-}
-</script>
-<script>
-let h=12,m=45,s=30;
-setInterval(()=>{s--;if(s<0){s=59;m--;}if(m<0){m=59;h--;}if(h<0)h=23;
-document.getElementById('h').textContent=String(h).padStart(2,'0');
-document.getElementById('m').textContent=String(m).padStart(2,'0');
-document.getElementById('s').textContent=String(s).padStart(2,'0');},1000);
-</script>
+
+<!-- Zoom Controls -->
+<div class="zoom-controls">
+  <button class="zoom-btn" onclick="zoomIn()">+</button>
+  <button class="zoom-btn" onclick="zoomOut()">−</button>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>

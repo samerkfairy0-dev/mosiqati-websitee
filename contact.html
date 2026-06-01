@@ -4,64 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>موسيقاتي - تواصل معنا</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:Arial,sans-serif;background:#f4f4f4;color:#222;direction:rtl;}
-.site-header{background:#111;padding:10px 25px;display:flex;align-items:center;justify-content:space-between;}
-.store-name{color:#f0c040;font-size:26px;font-weight:bold;}
-.store-logo{width:60px;height:60px;border-radius:50%;border:2px solid #f0c040;object-fit:cover;}
-nav{background:#1a1a1a;display:flex;justify-content:center;border-top:2px solid #f0c040;}
-nav a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 20px;color:#ccc;text-decoration:none;font-size:13px;border-left:1px solid #333;transition:background .2s,color .2s;}
-nav a:first-child{border-left:none;}
-nav a:hover,nav a.active{background:#f0c040;color:#111;}
-nav a img{width:20px;height:20px;filter:invert(1);}
-nav a:hover img,nav a.active img{filter:invert(0);}
-.page-hd{background:#111;color:white;padding:28px 30px;}
-.page-hd h1{font-size:24px;color:#f0c040;}
-.page-hd p{color:#aaa;margin-top:5px;font-size:14px;}
-.wrap{max-width:1050px;margin:30px auto;padding:0 25px;}
-.sec-title{font-size:18px;color:#111;border-bottom:3px solid #f0c040;padding-bottom:6px;margin-bottom:18px;}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
-.card{background:white;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);}
-.card img{width:100%;height:170px;object-fit:cover;}
-.card-body{padding:13px;}
-.card-body h3{font-size:14px;margin-bottom:4px;}
-.card-body p{font-size:12px;color:#777;margin-bottom:8px;}
-.price{color:#e74c3c;font-weight:bold;}
-.row{display:flex;justify-content:space-between;align-items:center;}
-.btn{background:#111;color:white;border:none;padding:7px 14px;border-radius:5px;cursor:pointer;font-family:Arial;font-size:13px;}
-.btn:hover{background:#333;}
-footer{background:#111;color:#888;text-align:center;padding:18px;font-size:13px;margin-top:30px;}
-/* text-to-speech */
-.tts-bar{background:#1a1a2e;color:white;padding:10px 20px;display:flex;align-items:center;gap:12px;font-size:13px;}
-.tts-btn{background:#f0c040;color:#111;border:none;padding:7px 16px;border-radius:5px;cursor:pointer;font-weight:bold;font-family:Arial;font-size:13px;}
-</style>
-<style>
-.fg{margin-bottom:12px;}
-.fg label{display:block;font-size:13px;font-weight:bold;color:#444;margin-bottom:4px;}
-.fg input,.fg textarea,.fg select{width:100%;padding:9px 12px;border:1.5px solid #ddd;border-radius:6px;font-family:Arial;font-size:13px;outline:none;}
-.fg input:focus,.fg textarea:focus{border-color:#f0c040;}
-.fg textarea{height:110px;resize:vertical;}
-.sub-btn{background:#111;color:white;border:none;padding:11px;border-radius:6px;cursor:pointer;font-family:Arial;font-size:14px;font-weight:bold;width:100%;}
-.sub-btn:hover{background:#333;}
-.ok{display:none;background:#d4edda;color:#155724;padding:10px;border-radius:6px;margin-top:10px;font-size:13px;}
-.social-icons{display:flex;gap:14px;margin-top:15px;}
-.social-icons a{display:flex;align-items:center;gap:7px;padding:10px 16px;border-radius:8px;text-decoration:none;font-size:13px;font-weight:bold;color:white;}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div class="site-header">
   <span class="store-name">موسيقاتي</span>
-  <img src="../logo.png" alt="موسيقاتي" class="store-logo">
+  <img src="image/logo.png" alt="موسيقاتي" class="store-logo">
 </div>
-<nav><a href="home.html"><img src="../image/home.png" alt="">الرئيسية</a><a href="store.html"><img src="../image/store.png" alt="">المتجر</a><a href="gifts.html"><img src="../image/gift-.png" alt="">الهدايا</a><a href="offers.html"><img src="../image/offer.png" alt="">العروض</a><a href="about.html"><img src="../image/about.png" alt="">من نحن</a><a href="contact.html" class="active"><img src="../image/contact.png" alt="">تواصل معنا</a></nav>
 
-<div class="tts-bar">
-  <span>🔊 استمع</span>
-  <button class="tts-btn" onclick="speak('contact-text')">▶ استمع الآن</button>
-</div>
-<div class="page-hd"><h1 id="contact-text">📞 تواصل معنا</h1><p>نحن هنا لمساعدتك في أي وقت</p></div>
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="store.html">المتجر</a>
+  <a href="gifts.html">الهدايا</a>
+  <a href="offers.html">العروض</a>
+  <a href="about.html">من نحن</a>
+  <a href="contact.html" class="active">تواصل معنا</a>
+</nav>
+
+<div class="page-hd"><h1>📞 تواصل معنا</h1><p>نحن هنا لمساعدتك في أي وقت</p></div>
+
 <div class="wrap">
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;">
     <div style="background:white;padding:28px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.09);">
@@ -75,9 +37,10 @@ footer{background:#111;color:#888;text-align:center;padding:18px;font-size:13px;
         <select><option>استفسار عن منتج</option><option>طلب خاص</option><option>شكوى</option><option>اقتراح</option></select>
       </div>
       <div class="fg"><label>رسالتك</label><textarea placeholder="اكتب رسالتك..."></textarea></div>
-      <button class="sub-btn" onclick="document.querySelector('.ok').style.display='block'">📤 إرسال</button>
+      <button class="sub-btn" onclick="showSuccess('تم إرسال رسالتك بنجاح! شكراً لتواصلك معنا 📧')">📤 إرسال</button>
       <div class="ok">✅ تم إرسال رسالتك! سنتواصل معك قريباً.</div>
     </div>
+
     <div>
       <h2 style="font-size:17px;color:#111;margin-bottom:16px;">📋 معلومات التواصل</h2>
       <div style="background:white;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden;">
@@ -112,16 +75,16 @@ footer{background:#111;color:#888;text-align:center;padding:18px;font-size:13px;
     </div>
   </div>
 </div>
+
 <footer>© 2025 موسيقاتي - جميع الحقوق محفوظة | الأردن - عمّان</footer>
-<script>
-function speak(id){
-  var txt = document.getElementById(id).innerText;
-  var u = new SpeechSynthesisUtterance(txt);
-  u.lang='ar-SA'; u.rate=0.9;
-  window.speechSynthesis.cancel();
-  window.speechSynthesis.speak(u);
-}
-</script>
+
+<!-- Zoom Controls -->
+<div class="zoom-controls">
+  <button class="zoom-btn" onclick="zoomIn()">+</button>
+  <button class="zoom-btn" onclick="zoomOut()">−</button>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>

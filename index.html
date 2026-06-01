@@ -4,68 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>موسيقاتي - الرئيسية</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:Arial,sans-serif;background:#f4f4f4;color:#222;direction:rtl;}
-.site-header{background:#111;padding:10px 25px;display:flex;align-items:center;justify-content:space-between;}
-.store-name{color:#f0c040;font-size:26px;font-weight:bold;}
-.store-logo{width:60px;height:60px;border-radius:50%;border:2px solid #f0c040;object-fit:cover;}
-nav{background:#1a1a1a;display:flex;justify-content:center;border-top:2px solid #f0c040;}
-nav a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 20px;color:#ccc;text-decoration:none;font-size:13px;border-left:1px solid #333;transition:background .2s,color .2s;}
-nav a:first-child{border-left:none;}
-nav a:hover,nav a.active{background:#f0c040;color:#111;}
-nav a img{width:20px;height:20px;filter:invert(1);}
-nav a:hover img,nav a.active img{filter:invert(0);}
-.page-hd{background:#111;color:white;padding:28px 30px;}
-.page-hd h1{font-size:24px;color:#f0c040;}
-.page-hd p{color:#aaa;margin-top:5px;font-size:14px;}
-.wrap{max-width:1050px;margin:30px auto;padding:0 25px;}
-.sec-title{font-size:18px;color:#111;border-bottom:3px solid #f0c040;padding-bottom:6px;margin-bottom:18px;}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
-.card{background:white;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);}
-.card img{width:100%;height:170px;object-fit:cover;}
-.card-body{padding:13px;}
-.card-body h3{font-size:14px;margin-bottom:4px;}
-.card-body p{font-size:12px;color:#777;margin-bottom:8px;}
-.price{color:#e74c3c;font-weight:bold;}
-.row{display:flex;justify-content:space-between;align-items:center;}
-.btn{background:#111;color:white;border:none;padding:7px 14px;border-radius:5px;cursor:pointer;font-family:Arial;font-size:13px;}
-.btn:hover{background:#333;}
-footer{background:#111;color:#888;text-align:center;padding:18px;font-size:13px;margin-top:30px;}
-
-/* Hero Section */
-.hero{background:linear-gradient(135deg,#111,#1a1a2e);color:white;padding:50px 30px;display:flex;align-items:center;justify-content:space-between;gap:30px;}
-.hero-text h1{font-size:34px;margin-bottom:10px;}
-.hero-text h1 span{color:#f0c040;}
-.hero-text p{color:#bbb;font-size:14px;line-height:1.8;margin-bottom:20px;max-width:550px;}
-.hero-btns{display:flex;gap:12px;}
-.btn-gold{background:#f0c040;color:#111;padding:11px 24px;border-radius:6px;text-decoration:none;font-weight:bold;}
-.btn-outline{border:2px solid #f0c040;color:#f0c040;padding:9px 22px;border-radius:6px;text-decoration:none;font-weight:bold;}
-
-/* About Box */
-.about-box{background:white;padding:25px;border-right:4px solid #f0c040;border-radius:8px;margin-bottom:25px;box-shadow:0 2px 8px rgba(0,0,0,.08);}
-.about-box h2{font-size:18px;color:#111;margin-bottom:10px;}
-.about-box p{font-size:14px;color:#555;line-height:1.9;}
-
-/* Text-to-Speech Bar */
-.tts-bar{background:#1a1a2e;color:white;padding:10px 20px;display:flex;align-items:center;gap:12px;font-size:13px;}
-.tts-btn{background:#f0c040;color:#111;border:none;padding:7px 16px;border-radius:5px;cursor:pointer;font-weight:bold;font-family:Arial;font-size:13px;}
-
-/* Team Section */
-.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin:30px 0;}
-.team-card{background:white;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);text-align:center;}
-.team-card img{width:100%;height:200px;object-fit:cover;}
-.team-info{padding:15px;}
-.team-info h3{font-size:16px;color:#111;margin-bottom:5px;font-weight:bold;}
-.team-info .role{color:#f0c040;font-size:13px;font-weight:bold;margin-bottom:8px;}
-.team-info p{font-size:12px;color:#777;line-height:1.6;}
-
-/* Zoom Controls */
-.zoom-controls{position:fixed;bottom:20px;left:20px;display:flex;gap:8px;z-index:999;}
-.zoom-btn{background:#f0c040;color:#111;border:none;padding:10px 12px;border-radius:5px;cursor:pointer;font-weight:bold;font-size:16px;}
-.zoom-btn:hover{background:#e0b030;}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -91,7 +30,7 @@ footer{background:#111;color:#888;text-align:center;padding:18px;font-size:13px;
 <div class="hero">
   <div class="hero-text" id="page-text">
     <h1>مرحباً بك في <span>موسيقاتي</span> 🎵</h1>
-    <p>متجر موسيقاتي (MOSIQATI) هو متجر رائد في بيع الآلات الموسيقية في الأردن. نقدم مجموعة واسعة من العود والقيثارة والدربكة والألات الموسيقية الشرقية والغربية عالية الجودة بأسعار تنافسية.</p>
+    <p>متجر موسيقاتي (MOSIQATI) هو متجر رائد في بيع الآلات الموسيقية في الأردن. نقدم مجموعة واسعة من العود والقيثارات والبيانو والدرمز ومعدات الاستوديو. نوفر التوصيل لجميع محافظات الأردن مع خدمات الصيانة والاستشارات الفنية.</p>
     <div class="hero-btns">
       <a href="store.html" class="btn-gold">تسوق الآن 🛒</a>
       <a href="about.html" class="btn-outline">تعرف علينا</a>
@@ -103,48 +42,8 @@ footer{background:#111;color:#888;text-align:center;padding:18px;font-size:13px;
 <div class="wrap">
   <div class="about-box">
     <h2>🏪 عن موسيقاتي</h2>
-    <p>متجر <strong>موسيقاتي (MOSIQATI)</strong> هو متجر رائد في بيع الآلات الموسيقية في الأردن، ويقدم مجموعة واسعة من المنتجات الموسيقية عالية الجودة. نحن متخصصون في بيع الآلات الشرقية والغربية، ونلتزم بتقديم أفضل الخدمات والأسعار المنافسة لعملائنا الكرام.</p>
+    <p>متجر <strong>موسيقاتي (MOSIQATI)</strong> هو متجر رائد في بيع الآلات الموسيقية في الأردن. نقدم مجموعة واسعة من العود والقيثارات والبيانو والدرمز ومعدات الاستوديو. نوفر التوصيل لجميع محافظات الأردن مع خدمات الصيانة والاستشارات الفنية.</p>
   </div>
-
-  <div class="sec-title">👥 فريق موسيقاتي المتخصص</div>
-  <div class="team-grid">
-    <div class="team-card">
-      <img src="image/users.jpg" alt="سامر الكفيري">
-      <div class="team-info">
-        <h3>سامر الكفيري</h3>
-        <div class="role">مدير المتجر</div>
-        <p><strong>العمر:</strong> 35 سنة<br><strong>التخصص:</strong> إدارة المتاجر<br>خبير في إدارة متاجر الآلات الموسيقية والتسويق الرقمي.</p>
-      </div>
-    </div>
-
-    <div class="team-card">
-      <img src="image/users.jpg" alt="كرم محمد">
-      <div class="team-info">
-        <h3>كرم محمد</h3>
-        <div class="role">خبير موسيقى</div>
-        <p><strong>العمر:</strong> 32 سنة<br><strong>التخصص:</strong> الموسيقى الشرقية<br>موسيقار وخبير في اختيار الآلات عالية الجودة.</p>
-      </div>
-    </div>
-
-    <div class="team-card">
-      <img src="image/users.jpg" alt="عبدالله أبو زريق">
-      <div class="team-info">
-        <h3>عبدالله أبو زريق</h3>
-        <div class="role">مهندس صيانة</div>
-        <p><strong>العمر:</strong> 38 سنة<br><strong>التخصص:</strong> صيانة الآلات<br>متخصص في صيانة وتصليح جميع أنواع الآلات الموسيقية.</p>
-      </div>
-    </div>
-
-    <div class="team-card">
-      <img src="image/users.jpg" alt="عبدالرحمن رمضان">
-      <div class="team-info">
-        <h3>عبدالرحمن رمضان</h3>
-        <div class="role">مستشار عملاء</div>
-        <p><strong>العمر:</strong> 28 سنة<br><strong>التخصص:</strong> خدمة العملاء<br>مستشار متخصص في مساعدة العملاء اختيار الآلة المناسبة.</p>
-      </div>
-    </div>
-  </div>
-
 </div>
 
 <footer>© 2025 موسيقاتي - جميع الحقوق محفوظة | الأردن - عمّان</footer>
@@ -155,29 +54,7 @@ footer{background:#111;color:#888;text-align:center;padding:18px;font-size:13px;
   <button class="zoom-btn" onclick="zoomOut()">−</button>
 </div>
 
-<script>
-let zoomLevel = 100;
-
-function speak(id){
-  var txt = document.getElementById(id).innerText;
-  var u = new SpeechSynthesisUtterance(txt);
-  u.lang='ar-SA'; u.rate=0.9;
-  window.speechSynthesis.cancel();
-  window.speechSynthesis.speak(u);
-}
-
-function zoomIn(){
-  zoomLevel += 10;
-  document.body.style.zoom = zoomLevel + '%';
-}
-
-function zoomOut(){
-  if(zoomLevel > 50) {
-    zoomLevel -= 10;
-    document.body.style.zoom = zoomLevel + '%';
-  }
-}
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
